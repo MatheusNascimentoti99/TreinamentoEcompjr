@@ -9,15 +9,15 @@
 
 <html>
     <form action="/Treinamento2020/user/store" method="post">
-        <input name="name" placeholder="name">
-        <input type="email" name="email" placeholder="email">
-        <select name="type">
+        <input name="name" placeholder="name" required>
+        <input type="email" name="email" placeholder="email" required>
+        <select name="type" required>
             <option value="">Selecione um tipo</option>
             <option value="admin">Administrador</option>
             <option value="user">Usuário comum</option>
         </select>
-        <input type="password" name="password">
-        <input type="password" name="password_confirmation">
+        <input type="password" name="password" placeholder="password" required>
+        <input type="password" name="password_confirmation" placeholder="password" required>
         <button type="submit"> Cadastrar </button>        
     </form>
 </html>
