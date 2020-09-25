@@ -5,31 +5,43 @@ session_start();
 class UserController{
 
     public function index(){
-        header("Location: /Treinamento2020/views/user/index.php");
+        header("Location: /Treinamento2020/views/admin/user/index.php");
     }
 
     public function create(){
-        header("Location: /Treinamento2020/views/user/create.php");
+        header("Location: /Treinamento2020/views/admin/user/create.php");
 
     }
 
     public function store(){
         if($_POST['password'] == $_POST['password_confirmation']){
+            var_dump($_POST);
             $resp = User::create($_POST['name'], $_POST['email'], $_POST['type'], $_POST['password']);
             if($resp){
                 header("Location: /Treinamento2020/user/index");
             }
         }
+        else{
+            header("Location: /Treinamento2020/views/admin/user/create.php");
+        }
     }
 
     public function edit($id){
-        header("Location: /Treinamento2020/views/user/edit.php?id={$id[0]}");
+        header("Location: /Treinamento2020/views/admin/user/edit.php?id={$id[0]}");
     }
 
     public function profile(){
     }
 
     public function update($id){
+        if($_POST['password'] == $_POST['password_confirmation']){
+            $resp = User::update($id[0], $_POST['name'], $_POST['email'], $_POST['type'], $_POST['password']);
+            header("Location: /Treinamento2020/user/index");
+
+        }
+        else{
+            header("Location: /Treinamento2020/views/admin/user/edit.php?id={$id[0]}");   
+        }
     }
 
     public function delete($id){
@@ -60,7 +72,7 @@ class UserController{
     }
     
     public static function verifyAdmin(){
-        if(!$_SESSION["user"].type == "admin"){
+        if(!$_SESSION["user"]->getType() == "admin"){
             header("Location: /Treinamento2020/home/index");
         }
     }
@@ -71,5 +83,9 @@ class UserController{
     }
 
     public static function get($id){
+        if($id)
+            return $user = User::get($id);
+        else
+            header("Location: /Treinamento2020/home/index");
     }
 }
