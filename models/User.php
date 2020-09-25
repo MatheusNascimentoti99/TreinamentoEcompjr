@@ -57,6 +57,10 @@ class User{
     }
 
     public static function delete($id){
+        $connection = Connection::getConnection();
+        $query = "delete from users where id=${id}";
+        var_dump($query);
+        return mysqli_query($connection, $query);
     }
 
     public static function update($id, $name, $email, $type, $password){

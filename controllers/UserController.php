@@ -45,6 +45,9 @@ class UserController{
     }
 
     public function delete($id){
+        $resp = User::delete($id[0]);
+        header("Location: /Treinamento2020/user/index");
+
     }
 
     public static function all(){
