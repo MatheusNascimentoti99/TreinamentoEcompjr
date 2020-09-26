@@ -74,8 +74,8 @@ class UserController{
     }
     
     public static function verifyAdmin(){
-        if(!$_SESSION["user"]->getType() == "admin"){
-            header("Location: /Treinamento2020/home/index");
+        if($_SESSION["user"]->getType() != "admin"){
+            header("Location: /Treinamento2020/views/admin/dashboard.php");
         }
     }
 
