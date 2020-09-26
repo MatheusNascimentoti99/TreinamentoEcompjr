@@ -31,6 +31,7 @@ class UserController{
     }
 
     public function profile(){
+        header("Location: /Treinamento2020/views/admin/user/profile.php");
     }
 
     public function update($id){
@@ -55,22 +56,20 @@ class UserController{
     }
     
     public function check(){
+        var_dump("algo");
         $user = User::find($_POST['email'], $_POST['password']);
         if($user){
             $_SESSION["user"] = $user;
             header("Location: /Treinamento2020/views/admin/dashboard.php");
-
         }
         else{
-
-           header("Location: /Treinamento2020/home/login.php");
-           echo "Email ou senha incorretos";
+           header("Location: /Treinamento2020/home/login");
         }
     }
 
     public static function verifyLogin(){
         if(!$_SESSION["user"]){
-            header("Location: /Treinamento2020/home/login.php");
+            header("Location: /Treinamento2020/home/login");
         }
     }
     

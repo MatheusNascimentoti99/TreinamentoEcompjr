@@ -19,6 +19,7 @@ class User{
         $query = "select * from users where email = '{$email}' and password = '{$password}'";
         $result = mysqli_query($connection, $query);
         if(mysqli_num_rows($result) ==1){
+            var_dump($result);
             $user = mysqli_fetch_assoc($result);
             $var = new User($user["id"], $user["name"], $user["email"], $user["type"]);
             return $var;
