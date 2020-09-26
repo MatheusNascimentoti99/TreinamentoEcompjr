@@ -31,6 +31,7 @@ class UserController{
     }
 
     public function profile(){
+        header("Location: /Treinamento2020/views/admin/user/profile.php");
     }
 
     public function update($id){
@@ -45,6 +46,9 @@ class UserController{
     }
 
     public function delete($id){
+        $resp = User::delete($id[0]);
+        header("Location: /Treinamento2020/user/index");
+
     }
 
     public static function all(){
@@ -52,28 +56,26 @@ class UserController{
     }
     
     public function check(){
+        var_dump("algo");
         $user = User::find($_POST['email'], $_POST['password']);
         if($user){
             $_SESSION["user"] = $user;
             header("Location: /Treinamento2020/views/admin/dashboard.php");
-
         }
         else{
-
-           header("Location: /Treinamento2020/home/login.php");
-           echo "Email ou senha incorretos";
+           header("Location: /Treinamento2020/home/login");
         }
     }
 
     public static function verifyLogin(){
         if(!$_SESSION["user"]){
-            header("Location: /Treinamento2020/home/login.php");
+            header("Location: /Treinamento2020/home/login");
         }
     }
     
     public static function verifyAdmin(){
-        if(!$_SESSION["user"]->getType() == "admin"){
-            header("Location: /Treinamento2020/home/index");
+        if($_SESSION["user"]->getType() != "admin"){
+            header("Location: /Treinamento2020/views/admin/dashboard.php");
         }
     }
 

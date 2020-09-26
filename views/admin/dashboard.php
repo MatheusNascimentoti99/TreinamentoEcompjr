@@ -3,7 +3,7 @@
     require_once "../../models/User.php";
     require_once "../../controllers/UserController.php";
     UserController::verifyLogin();
-    echo "Olá ".$_SESSION['user']->getName();
+    echo "Olá, ".$_SESSION['user']->getName()."! ";
 ?>
 <a href="/Treinamento2020/user/logout">Sair</a>
 
