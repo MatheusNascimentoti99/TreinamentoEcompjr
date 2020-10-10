@@ -60,9 +60,11 @@ class UserController{
 		
 		if($user){
 			$_SESSION["user"] = $user;
+			$_SESSION["fault"] = null;
 			header("Location: /Treinamento2020/views/admin/dashboard.php");
 		}
 		else{
+			$_SESSION["fault"] = "Senha ou email incorreto";
 			header("Location: /Treinamento2020/home/login");
 		}
 	}
