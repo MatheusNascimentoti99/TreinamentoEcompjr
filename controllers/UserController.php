@@ -5,6 +5,7 @@ session_start();
 class UserController{
 	
 	public function index(){
+		$_SESSION["fault-login"] = null;
 		header("Location: /Treinamento2020/views/admin/user/index.php");
 	}
 	
@@ -60,11 +61,11 @@ class UserController{
 		
 		if($user){
 			$_SESSION["user"] = $user;
-			$_SESSION["fault"] = null;
+			$_SESSION["fault-login"] = null;
 			header("Location: /Treinamento2020/views/admin/dashboard.php");
 		}
 		else{
-			$_SESSION["fault"] = "Senha ou email incorreto";
+			$_SESSION["fault-login"] = "Senha ou email incorreto";
 			header("Location: /Treinamento2020/home/login");
 		}
 	}
@@ -83,6 +84,7 @@ class UserController{
 	
 	public static function logout(){
 		$_SESSION["user"] = null;
+		$_SESSION["fault-login"] = null;
 		header("Location: /Treinamento2020/views/login.php");
 	}
 	
