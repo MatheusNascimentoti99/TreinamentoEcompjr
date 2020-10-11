@@ -1,5 +1,15 @@
 img {
     width: 2.4rem;
     height: 2.4rem;
-    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.nav-item {
+    font-size: .50rem;
+}
+
+@media (min-width: 575.98px) {
+    .nav-item {
+        font-size: 1.50rem;
+    }
 }
