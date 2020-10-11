@@ -5,8 +5,8 @@ session_start();
 <html>
 
 <head>
-    <link href="../Lib/bootstrap.css" rel="stylesheet">
-    <link href="../assets/styles/login.css" rel="stylesheet">
+    <link href="/Treinamento2020/Lib/bootstrap.css" rel="stylesheet">
+    <link href="/Treinamento2020/assets/styles/login.css" rel="stylesheet">
     <meta charset="utf-8" />
     <title>Login</title>
 </head>
@@ -21,15 +21,13 @@ session_start();
             <div class="row">
                 <input class="col-12 form-control" name="email" placeholder="Email address" required autofocus>
                 <input class="col-12 form-control" name="password" type="password" placeholder="Password" required>
-                <button class="btn btn-lg btn-primary btn-block" type="submit"> Entrar </button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name = "sign-in"> Entrar </button>
             </div>
         </form>
-        <?php if($_SESSION["fault-login"] !=null){?>
         <div class="alert alert-danger" role="alert">
             <h4 class="alert-heading">Erro!</h4>
             <p>Senha ou email inválidos</p>
         </div>
-        <?php }?>
     </div>
 </body>
 
