@@ -1,0 +1,27 @@
+li {
+    list-style: none;
+}
+
+.card-user {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-user svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.btn-group {
+    margin-top: 1rem;
+}
+
+.btn-group a {
+    margin-right: 1rem;
+}
+
+.card-user ul {
+    align-self: baseline;
+    position: relative;
+    margin-left: -2rem;
+}
