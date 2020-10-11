@@ -45,7 +45,7 @@ $user = $_SESSION['user'];
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="validationServer04">Selecione o tipo</label>
-                    <select class="custom-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                    <select name="type" class="custom-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
                         <option selected disabled value="">Choose...</option>
                         <?php if ($_SESSION['user']->getType() == 'admin') { ?>
                             <option  value="admin" <?php if ($user->getType() == "admin") { ?> selected <?php } ?>>Administrador</option>
