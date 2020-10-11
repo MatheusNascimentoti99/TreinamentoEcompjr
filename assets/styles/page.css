@@ -3,11 +3,17 @@ body {
     height: 100%;
 }
 
-.containe {
+.page {
     height: 100%;
     width: 100%;
     margin: 0px;
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #fdfffc;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
 }
