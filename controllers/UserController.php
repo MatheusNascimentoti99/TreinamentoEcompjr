@@ -60,7 +60,7 @@ class UserController{
 		
 		if($user){
 			$_SESSION["user"] = $user;
-			header("Location: /Treinamento2020/views/admin/dashboard.php");
+			header("Location: /Treinamento2020/views/admin/user/profile.php");
 		}
 		else{
 			header("Location: /Treinamento2020/home/login");
@@ -81,6 +81,7 @@ class UserController{
 	
 	public static function logout(){
 		$_SESSION["user"] = null;
+		$_SESSION["fault-login"] = null;
 		header("Location: /Treinamento2020/views/login.php");
 	}
 	
