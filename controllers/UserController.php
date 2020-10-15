@@ -60,9 +60,11 @@ class UserController{
 		
 		if($user){
 			$_SESSION["user"] = $user;
+			$_SESSION["invalid"] = null;
 			header("Location: /Treinamento2020/views/admin/user/profile.php");
 		}
 		else{
+			$_SESSION["invalid"] = " ";
 			header("Location: /Treinamento2020/home/login");
 		}
 	}
@@ -75,7 +77,7 @@ class UserController{
 	
 	public static function verifyAdmin(){
 		if($_SESSION["user"]->getType() != "admin"){
-			header("Location: /Treinamento2020/views/admin/dashboard.php");
+			header("Location: /Treinamento2020/views/admin/user/profile.php");
 		}
 	}
 	

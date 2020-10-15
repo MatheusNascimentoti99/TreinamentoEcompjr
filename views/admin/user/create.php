@@ -21,7 +21,7 @@ UserController::verifyLogin();
         <?php include '../dashboard.php' ?>
         <h1 class="text-primary">Cadastrar novo usuário</h1>
         <div class="container page">
-            <form action="/Treinamento2020/user/store" method="post">
+            <form action="/Treinamento2020/user/store" method="post" Onsubmit = "return submitForm()">
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="validationServer01">Nome</label>
