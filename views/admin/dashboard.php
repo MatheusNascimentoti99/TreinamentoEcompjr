@@ -8,6 +8,7 @@ UserController::verifyLogin();
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/Treinamento2020/assets/styles/dashboard.css" rel="stylesheet">
+    <script language="JavaScript" src="/Treinamento2020/assets/js/validForm.js"></script>
     <meta charset="utf-8" />
 </head>
 <nav class="navbar navbar-expand navbar-light bg-light sticky-top">

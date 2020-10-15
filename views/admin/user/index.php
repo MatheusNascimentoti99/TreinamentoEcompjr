@@ -58,7 +58,7 @@ UserController::verifyAdmin();
                                     <?php
                                     if ($user->getId() != $_SESSION['user']->getId()) {
                                     ?>
-                                        <a href="/Treinamento2020/user/delete/<?php echo $user->getId() ?>" type="button" class="btn btn-sm btn-outline-secondary">Excluir</a>
+                                        <a Onclick = "return submitForm()"  href="/Treinamento2020/user/delete/<?php echo $user->getId() ?>" type="button" class="btn btn-sm btn-outline-secondary">Excluir</a>
                                         </a>
 
 

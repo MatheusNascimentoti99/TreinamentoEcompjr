@@ -21,7 +21,7 @@ $user = $_SESSION['user'];
     <?php include '../dashboard.php' ?>
     <h1 class="text-primary">Meu perfil</h1>
     <div class="container page">
-        <form action="/Treinamento2020/user/update/<?php echo $user->getId() ?>" method="post">
+        <form action="/Treinamento2020/user/update/<?php echo $user->getId() ?>" method="post" OnSubmit = "return submitForm()">
             <div class="form-row">
                 <div class="col-md-6 mb-3">
                     <label for="validationServer01">Nome</label>
