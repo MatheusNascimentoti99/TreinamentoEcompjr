@@ -20,10 +20,27 @@ html {
     text-align: justify;
 }
 
+#organizationBusiness .item {
+    background: none;
+}
+
+#organizationBusiness .item i {
+    margin-top: 1rem;
+}
+
+.imgComplement {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
 @media (max-width: 768px) {
     /* Bump up size of carousel content */
     #about img {
         display: none;
+    }
+    #organizationBusiness .item {
+        background: #f7f7f7;
     }
 }
 
