@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 #about .featurette {
@@ -26,15 +27,12 @@ html {
 
 #organizationBusiness .item i {
     margin-top: 1rem;
-    display: flex;
-    justify-content: center;
 }
 
-.imgComplement {
-    width: 400px;
-    height: 400px;
-    object-fit: fill;
-    align-self: center;
+#organizationBusiness img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
 }
 
 #block {
