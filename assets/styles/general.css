@@ -37,6 +37,12 @@ html {
     align-self: center;
 }
 
+#block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 @media (max-width: 768px) {
     /* Bump up size of carousel content */
     #about img {
