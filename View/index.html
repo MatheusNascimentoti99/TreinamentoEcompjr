@@ -9,11 +9,7 @@
     <meta name="generator" content="Jekyll v4.1.1">
     <title>Carousel Template · Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -30,8 +26,18 @@
             }
         }
     </style>
+    <link href="../assets/styles/slide.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/styles/carousel.css" rel="stylesheet">
     <link href="../assets/styles/navBar.css" rel="stylesheet">
+    <link href="../assets/styles/hover.css" rel="stylesheet" media="all">
+    <link href="../assets/styles/general.css" rel="stylesheet">
+
+
+
+
+
 </head>
 
 <body>
@@ -41,27 +47,29 @@
                 <img class="navbar" src="../assets/images/LogoEcompjr.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nossa equipe</a>
+                        <a class="nav-link" href="#ourService">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Carta de Serviço</a>
+                        <a class="nav-link" href="#">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
     </header>
@@ -72,36 +80,27 @@
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img class="general-background" src="../assets/images/home-office.jpg">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            <img src="../assets/images/logomarca.png" alt="Logo da EcompJr" id="logo">
+                            <p>EMPRESA JÚNIOR DE ENGENHARIA DE COMPUTAÇÃO DA UEFS</p>
+                            <p><a class="btn btn-lg btn-primary button hvr-float" href="#about" role="button">Conheça-nos</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                    <img class="general-background" src="../assets/images/home-office.jpg">
                     <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        <div class="carousel-caption">
+                            <img src="../assets/images/logomarca.png" alt="Logo da EcompJr" id="logo">
+                            <h1 class="popout">ECOMPJR.</h1>
+                            <p>SUA IDEIA A UM PASSO DA REALIDADE</p>
+
                         </div>
                     </div>
                 </div>
@@ -116,82 +115,151 @@
             </a>
         </div>
 
-
-        <!-- Marketing messaging and featurettes
-  ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-
         <div class="container marketing">
-
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                        amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            <div id="about">
+                <hr class="featurette-divider">
+                <!-- About-us -->
+                <div class="row featurette justify">
+                    <div class="col-md-7" data-aos="fade-down" data-aos-duration="1500" id="item">
+                        <h2 class="featurette-heading">QUEM SOMOS!</h2>
+                        <p class="lead">Empresa Júnior de Engenharia de Computação, composta por alunos do curso da Universidade Estadual de Feira de Santana, que promove impactos positivos em micro e pequenas empresas por meio de soluções tecnológicas.</p>
+                        <p class="lead">Fundada em 2007, a EcompJr atualmente participa ativamente do propósito que envolve ser Movimento Empresa Júnior. A empresa promove uma vivência empresarial estratégica para estudantes interessados em liderar a mudança no atual
+                            cenário brasileiro.
+                        </p>
+                    </div>
+                    <div class="col-md-5" data-aos="fade-up" data-aos-duration="1500" id="item">
+                        <img id="logo" src="../assets/images/LogoEcompjr.png">
+                    </div>
                 </div>
             </div>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <div id="organizationBusiness">
+                <hr class="featurette-divider">
+                <div class="row">
+                    <div class="col-lg-4 item" data-aos="fade-down">
+                        <i class="fas fa-trophy"></i>
+                        <h2>Missão</h2>
+                        <p>Construir juntos um futuro inovador tranformando estudantes em profissionais reconhecidos e aprender a vencer desafios através de oportunidades de impacto.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 item" data-aos="fade-down">
+                        <i class="far fa-eye rounded-circle"></i>
+                        <h2>Visão</h2>
+                        <p>Em 2020, desenvolver lideres comprometidos e capacitados que entregam resultados.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4 item" data-aos="fade-down">
+                        <i class="fas fa-users"></i>
+                        <h2>Valores</h2>
+                        <p>Os valores de uma empresa guiam a conduta da mesma, portanto, a EcompJr. baseia-se nos seguintes valores: Protagonismo, assiduidade, resiliência, constância em resultados, evolução com erros, conexão com o movimento e empatia.
+                        </p>
+                    </div>
+                    <!-- /.col-lg-4 -->
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <!-- /.row -->
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <div data-aos="fade-down" data-aos-duration="1500">
+                            <h2 class="featurette-heading">O QUE FAZEMOS!</h2>
+                            <p class="lead">Veja alguns dos serviços que a EcompJr oferece para que você possa realizar o projeto dos seus sonhos, remover aquele gargalo operacional automatizando processos e alavancar ainda mais a sua empresa.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/working-group.jpg" alt="Foto de pessoas trabalhando em grupo">
+                    </div>
+                </div>
+
+                <div id="ourService">
+                    <hr class="featurette-divider">
+                    <div class="row">
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="far fa-window-maximize"></i>
+                            <h2>Sites</h2>
+                            <p>Desenvolvimento de sites de forma criativa, funcional e responsiva, oferecendo a melhor solução para você ou sua empresa.</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="fas fa-desktop"></i>
+                            <h2>Sistema Locais</h2>
+                            <p>Impulsione o seu desempenho profissional reduzindo seus gastos. Possibilitamos a você os melhores Sistemas Locais que permitem automatizar com facilidade suas tarefas ou serviços.</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h2>Aplicativos Mobile</h2>
+                            <p>Já pensou em ter a sua empresa, serviços e ideias na palma de sua mão? Nós possibilitamos isso desenvolvendo soluções mobile sob medida para você.</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="fas fa-cloud"></i>
+                            <h2>Sistemas Web</h2>
+                            <p>Reduza seus gastos impulsionando o seu desempenho profissional. Possibilitamos a você os melhores Sistemas Web que permitem automatizar com facilidade suas tarefas ou serviços</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h2>e-Commerce</h2>
+                            <p>Tenha sua Loja Virtual e faça seus produtos atingirem uma clientela ainda maior.</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h2>Consultória</h2>
+                            <p>Tem uma ideia inovadora mais não sabe como começar? Possibilitamos a você dicas e compartilhamento de experiências.</p>
+                            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                </div>
+                <div class="row featurette">
+                    <hr class="featurette-divider">
+                    <div class="col-md-7">
+                        <div data-aos="fade-down" data-aos-duration="1500">
+                            <h2 class="featurette-heading" data-aos="fade-down" data-aos-anchor-placement="top-center">NOSSA EQUIPE</h2>
+                            <p class="lead" id="top-center">Nossa equipe é formada por estudantes do curso de Engenharia de Computação da Universidade Estadual de Feira de Santana que trabalham de forma voluntária com o objetivo de desenvolver projetos de qualidade e aprender como funciona
+                                o mercado empresarial.</p>
+                        </div>
+                    </div>
+                    <div class="members col-md-5">
+                        <div class="slider">
+                            <div class="slide"><img src="../assets/images/members/member-08.jpg" />
+                                <legend>Diretor de Marketing</legend>
+                            </div>
+                            <div class="slide"><img src="../assets/images/members/member-09.jpg" />
+                                <legend>Diretor de Projetos</legend>
+                            </div>
+                            <div class="slide"><img src="../assets/images/members/member-01.jpg" />
+                                <legend>Diretor de Recursos humanos</legend>
+                            </div>
+                            <div class="slide"><img src="../assets/images/members/member-11.jpg" />
+                                <legend>Vice-Presidente</legend>
+                            </div>
+                            <div class="slide"><img src="../assets/images/members/member-05.jpg" />
+                                <legend>Presidente</legend>
+                            </div>
+                            <div class="slide"><img src="../assets/images/LogoEcompjr.png" />
+                                <legend>Nossa Ditetória</legend>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
+        </div>
 
-            <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
+        <!-- /END THE FEATURETTES -->
 
         </div>
         <!-- /.container -->
@@ -203,10 +271,19 @@
             <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
     </script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/slide.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/6f8b874c8a.js" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
 
 </html>
