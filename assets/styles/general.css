@@ -45,6 +45,24 @@ html {
     padding-top: 1rem;
 }
 
+footer {
+    margin-top: -3rem;
+    position: relative;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {}
+
+.footer {
+    background: #f7f7f7;
+    margin-bottom: -3rem;
+}
+
 @media (max-width: 768px) {
     /* Bump up size of carousel content */
     #about img {
@@ -52,6 +70,16 @@ html {
     }
     #organizationBusiness .item {
         background: #f7f7f7;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Bump up size of carousel content */
+    .contact .featurette-divider {
+        display: none;
     }
 }
 

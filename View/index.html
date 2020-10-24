@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Carousel Template · Bootstrap</title>
+    <link rel="shortcut icon" href="../assets/images/LogoEcompjr.png" type="image/x-icon">
+    <title>EcompJr</title>
 
     <!-- Bootstrap core CSS -->
     <style>
@@ -61,13 +62,13 @@
                         <a class="nav-link" href="#ourService">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Equipe</a>
+                        <a class="nav-link" href="#staff">Equipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfólio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -220,81 +221,109 @@
                         <!-- /.col-lg-4 -->
                     </div>
                 </div>
-                <div class="row featurette">
+
+                <div class="featurette" id="staff">
+                    <hr class="featurette-divider" id="top-center">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div data-aos="fade-down" data-aos-duration="1500">
+                                <h2 class="featurette-heading" data-aos="fade-down" data-aos-anchor-placement="top-center">NOSSA EQUIPE</h2>
+                                <p class="lead">Nossa equipe é formada por estudantes do curso de Engenharia de Computação da Universidade Estadual de Feira de Santana que trabalham de forma voluntária com o objetivo de desenvolver projetos de qualidade e aprender como
+                                    funciona o mercado empresarial.</p>
+                            </div>
+                        </div>
+                        <div class="members col-md-5 fade-down">
+                            <div class="slider">
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="500"><img src="../assets/images/members/member-08.jpg" />
+                                    <legend>Diretor de Marketing</legend>
+                                </div>
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="1000"><img src="../assets/images/members/member-09.jpg" />
+                                    <legend>Diretor de Projetos</legend>
+                                </div>
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="2000"><img src="../assets/images/members/member-01.jpg" />
+                                    <legend>Diretor de Recursos humanos</legend>
+                                </div>
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="3000"><img src="../assets/images/members/member-11.jpg" />
+                                    <legend>Vice-Presidente</legend>
+                                </div>
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="4000"><img src="../assets/images/members/member-05.jpg" />
+                                    <legend>Presidente</legend>
+                                </div>
+                                <div class="slide" data-aos="fade-down-left" data-aos-duration="5000"><img src="../assets/images/LogoEcompjr.png" />
+                                    <legend>Nossa Ditetória</legend>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="featurette-divider">
+                <div id="contact">
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <div data-aos="fade-down" data-aos-duration="1500">
+                                <h2 class="featurette-heading">ENTRE EM CONTATO</h2>
+                                <p class="lead">Deseja saber mais sobre nossos produtos e serviços? Gostaria de fazer o orçamento de algum projeto? Acredita que uma parceria com a EcompJr seria uma boa ideia? Para isso, e qualquer outra dúvida entre em contato!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/contato.jpg" alt="Foto de pessoas trabalhando em grupo">
+                        </div>
+                    </div>
+
+
                     <hr class="featurette-divider">
-                    <div class="col-md-7">
-                        <div data-aos="fade-down" data-aos-duration="1500">
-                            <h2 class="featurette-heading" data-aos="fade-down" data-aos-anchor-placement="top-center">NOSSA EQUIPE</h2>
-                            <p class="lead" id="top-center">Nossa equipe é formada por estudantes do curso de Engenharia de Computação da Universidade Estadual de Feira de Santana que trabalham de forma voluntária com o objetivo de desenvolver projetos de qualidade e aprender como funciona
-                                o mercado empresarial.</p>
+                    <div class="row contact">
+                        <div class="col-lg-5 col-sm-12">
+                            <p>
+                                <h3><i class="fa fa-map-marker"></i> Endereço</h3>
+                                UEFS - Avenida Transnordestina, s/nº - Módulo 5, MP 51A Novo Horizonte, Feira de Santana - BA, 44036-900
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-phone"></i> WHATSAPP</h3>
+                                (75) 98897-6806
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-envelope"></i> EMAIL</h3>
+                                ecompjr@uefs.br
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-clock-o"></i> HORÁRIOS</h3>
+                                Segunda à Sexta - das 7:30 às 17:30
+                            </p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3899.701436897378!2d-38.975318370114124!3d-12.200707028713513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7143889364b821b%3A0xae5e88b833ba28f3!2sEcompJr!5e0!3m2!1spt-BR!2sbr!4v1568054667817!5m2!1spt-BR!2sbr"
+                                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <hr class="featurette-divider col-sm-12">
+                        <div class="col-lg-7 col-sm-12">
+                            <form>
+                                <h3><i class="fas fa-paper-plane"></i> Contato</h3>
+                                <div class="form-group">
+                                    <label for="name">Seu nome</label>
+                                    <textarea class="form-control" id="name" rows="1"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Endereço de email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Assunto</label>
+                                    <textarea class="form-control" id="subject" rows="1"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Sua mensagem</label>
+                                    <textarea class="form-control" id="description" rows="5"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="float-right btn btn-lg btn-primary button hvr-float">Enviar mensagem</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="members col-md-5">
-                        <div class="slider">
-                            <div class="slide"><img src="../assets/images/members/member-08.jpg" />
-                                <legend>Diretor de Marketing</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-09.jpg" />
-                                <legend>Diretor de Projetos</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-01.jpg" />
-                                <legend>Diretor de Recursos humanos</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-11.jpg" />
-                                <legend>Vice-Presidente</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-05.jpg" />
-                                <legend>Presidente</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/LogoEcompjr.png" />
-                                <legend>Nossa Ditetória</legend>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
-                
-                <hr class="featurette-divider">
-
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <div data-aos="fade-down" data-aos-duration="1500">
-                            <h2 class="featurette-heading">ENTRE EM CONTATO</h2>
-                            <p class="lead">Deseja saber mais sobre nossos produtos e serviços? Gostaria de fazer o orçamento de algum projeto? Acredita que uma parceria com a EcompJr seria uma boa ideia? Para isso, e qualquer outra dúvida entre em contato!</p>
-                        </div>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/contato.jpg" alt="Foto de pessoas trabalhando em grupo">
-                    </div>
-                </div>
-
-
-                <hr class="featurette-divider">
-                
-                <form>
-                    <div class="form-group">
-                        <label for="name">Seu nome</label>
-                        <textarea class="form-control" id="name" rows="1"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Endereço de email</label>
-                      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Assunto</label>
-                        <textarea class="form-control" id="subject" rows="1"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <label for="description">Sua mensagem</label>
-                      <textarea class="form-control" id="description" rows="5"></textarea>
-                    </div>
-                  </form>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-
         <!-- /END THE FEATURETTES -->
 
         </div>
@@ -302,10 +331,14 @@
 
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+        <div class="footer">
+            <hr class="featurette-divider">
+            <footer>
+                <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                <img src="../assets/images/logoNome.png" height="80px" alt="Logo da EcompJr" id="logo">
+                <p><a href="#myCarousel"><i class="fa fa-chevron-up"></i></a></p>
+            </footer>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
