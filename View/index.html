@@ -7,7 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Carousel Template · Bootstrap</title>
+    <link rel="shortcut icon" href="../assets/images/LogoEcompjr.png" type="image/x-icon">
+    <title>EcompJr</title>
 
     <!-- Bootstrap core CSS -->
     <style>
@@ -33,11 +34,6 @@
     <link href="../assets/styles/navBar.css" rel="stylesheet">
     <link href="../assets/styles/hover.css" rel="stylesheet" media="all">
     <link href="../assets/styles/general.css" rel="stylesheet">
-
-
-
-
-
 </head>
 
 <body>
@@ -47,7 +43,7 @@
                 <img class="navbar" src="../assets/images/LogoEcompjr.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
@@ -61,13 +57,13 @@
                         <a class="nav-link" href="#ourService">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Equipe</a>
+                        <a class="nav-link" href="#team">Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfólio</a>
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#contactUs">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -158,21 +154,21 @@
                 </div>
                 <!-- /.row -->
 
-                <hr class="featurette-divider">
+                <div id="ourService">
+                    <hr class="featurette-divider">
 
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <div data-aos="fade-down" data-aos-duration="1500">
-                            <h2 class="featurette-heading">O QUE FAZEMOS!</h2>
-                            <p class="lead">Veja alguns dos serviços que a EcompJr oferece para que você possa realizar o projeto dos seus sonhos, remover aquele gargalo operacional automatizando processos e alavancar ainda mais a sua empresa.</p>
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <div data-aos="fade-down" data-aos-duration="1500">
+                                <h2 class="featurette-heading">O QUE FAZEMOS!</h2>
+                                <p class="lead">Veja alguns dos serviços que a EcompJr oferece para que você possa realizar o projeto dos seus sonhos, remover aquele gargalo operacional automatizando processos e alavancar ainda mais a sua empresa.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/working-group.jpg" alt="Foto de pessoas trabalhando em grupo">
                         </div>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/working-group.jpg" alt="Foto de pessoas trabalhando em grupo">
-                    </div>
-                </div>
 
-                <div id="ourService">
                     <hr class="featurette-divider">
                     <div class="row">
                         <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
@@ -185,7 +181,8 @@
                         <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
                             <i class="fas fa-desktop"></i>
                             <h2>Sistema Locais</h2>
-                            <p>Impulsione o seu desempenho profissional reduzindo seus gastos. Possibilitamos a você os melhores Sistemas Locais que permitem automatizar com facilidade suas tarefas ou serviços.</p>
+                            <p>Impulsione o seu desempenho profissional reduzindo seus gastos. Possibilitamos a você os melhores Sistemas Locais que permitem automatizar com facilidade suas tarefas ou serviços.
+                            </p>
                             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <!-- /.col-lg-4 -->
@@ -199,7 +196,8 @@
                         <div class="col-lg-4 hvr-float hvr-bounce-to-left" id="block">
                             <i class="fas fa-cloud"></i>
                             <h2>Sistemas Web</h2>
-                            <p>Reduza seus gastos impulsionando o seu desempenho profissional. Possibilitamos a você os melhores Sistemas Web que permitem automatizar com facilidade suas tarefas ou serviços</p>
+                            <p>Reduza seus gastos impulsionando o seu desempenho profissional. Possibilitamos a você os melhores Sistemas Web que permitem automatizar com facilidade suas tarefas ou serviços
+                            </p>
                             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                         </div>
                         <!-- /.col-lg-4 -->
@@ -220,45 +218,244 @@
                         <!-- /.col-lg-4 -->
                     </div>
                 </div>
-                <div class="row featurette">
+
+                <div id="team">
                     <hr class="featurette-divider">
-                    <div class="col-md-7">
-                        <div data-aos="fade-down" data-aos-duration="1500">
-                            <h2 class="featurette-heading" data-aos="fade-down" data-aos-anchor-placement="top-center">NOSSA EQUIPE</h2>
-                            <p class="lead" id="top-center">Nossa equipe é formada por estudantes do curso de Engenharia de Computação da Universidade Estadual de Feira de Santana que trabalham de forma voluntária com o objetivo de desenvolver projetos de qualidade e aprender como funciona
-                                o mercado empresarial.</p>
-                        </div>
-                    </div>
-                    <div class="members col-md-5">
-                        <div class="slider">
-                            <div class="slide"><img src="../assets/images/members/member-08.jpg" />
-                                <legend>Diretor de Marketing</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-09.jpg" />
-                                <legend>Diretor de Projetos</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-01.jpg" />
-                                <legend>Diretor de Recursos humanos</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-11.jpg" />
-                                <legend>Vice-Presidente</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/members/member-05.jpg" />
-                                <legend>Presidente</legend>
-                            </div>
-                            <div class="slide"><img src="../assets/images/LogoEcompjr.png" />
-                                <legend>Nossa Ditetória</legend>
+                    <div class="row featurette">
+                        <hr class="featurette-divider">
+                        <div class="col-md-7">
+                            <div data-aos="fade-down" data-aos-duration="1500">
+                                <h2 class="featurette-heading" data-aos="fade-down" data-aos-anchor-placement="top-center">
+                                    NOSSA EQUIPE</h2>
+                                <p class="lead" id="top-center">Nossa equipe é formada por estudantes do curso de Engenharia de Computação da Universidade Estadual de Feira de Santana que trabalham de forma voluntária com o objetivo de desenvolver projetos de qualidade e aprender como
+                                    funciona o mercado empresarial.</p>
                             </div>
                         </div>
+                        <div class="members col-md-5">
+                            <div class="slider">
+                                <div class="slide"><img src="../assets/images/members/member-08.jpg" />
+                                    <legend>Diretor de Marketing</legend>
+                                </div>
+                                <div class="slide"><img src="../assets/images/members/member-09.jpg" />
+                                    <legend>Diretor de Projetos</legend>
+                                </div>
+                                <div class="slide"><img src="../assets/images/members/member-01.jpg" />
+                                    <legend>Diretor de Recursos humanos</legend>
+                                </div>
+                                <div class="slide"><img src="../assets/images/members/member-11.jpg" />
+                                    <legend>Vice-Presidente</legend>
+                                </div>
+                                <div class="slide"><img src="../assets/images/members/member-05.jpg" />
+                                    <legend>Presidente</legend>
+                                </div>
+                                <div class="slide"><img src="../assets/images/LogoEcompjr.png" />
+                                    <legend>Nossa Ditetoria</legend>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div id="portfolio">
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <div data-aos="fade-down" data-aos-duration="1500">
+                                <h2 class="featurette-heading">PORTFÓLIO</h2>
+                                <p class="lead">Estes são alguns dos projetos que já desenvolvemos:</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/portfolio.jpg" alt="Foto de pessoas trabalhando em grupo">
+                        </div>
                     </div>
 
+                    <hr class="featurette-divider">
+
+                    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <!------ Include the above in your HEAD tag ---------->
+
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Alfa JR" data-image="../assets/images/portfolio/alfa.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/alfa.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="FBTA" data-image="../assets/images/portfolio/fbta.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/fbta.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Carvalho Alves Advocacia" data-image="../assets/images/portfolio/carvalho-alves.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/carvalho-alves.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Colegiado de Engenharia de Computação" data-image="../assets/images/portfolio/CEcomp.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/CEcomp.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Engetec JR" data-image="../assets/images/portfolio/engetec.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/engetec.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Resoluções UEFS" data-image="../assets/images/portfolio/resolveuefs.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/resolveuefs.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Life JR" data-image="../assets/images/portfolio/life.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/life.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Pollar Refrigeração" data-image="../assets/images/portfolio/pollar.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/pollar.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Tecnoexpress" data-image="../assets/images/portfolio/tecnoexpress.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/tecnoexpress.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="APAS" data-image="../assets/images/portfolio/apas.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/apas.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Super Souza" data-image="../assets/images/portfolio/superSouza.png" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/superSouza.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Tripeco" data-image="../assets/images/portfolio/tripeco.png" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/tripeco.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Emartes" data-image="../assets/images/portfolio/emartes.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/emartes.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="ADM JR" data-image="../assets/images/portfolio/admjr.jpg" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/admjr.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Plamol" data-image="../assets/images/portfolio/plamol1.png" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/plamol1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="ABSAM" data-image="../assets/images/portfolio/absam.png" data-target="#image-gallery">
+                                        <img class="img-thumbnail" src="../assets/images/portfolio/absam.png" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="image-gallery-title"></h4>
+                                            <button type="button" class="close" data-dismiss="modal"><span
+                                                    aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                            </button>
+
+                                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contactUs">
+                    <hr class="featurette-divider">
+                    <!-- About-us -->
+                    <div class="row featurette justify">
+                        <div class="col-md-7" data-aos="fade-down" data-aos-duration="1500" id="item">
+                            <h2 class="featurette-heading">ENTRE EM CONTATO</h2>
+                            <p class="lead">Deseja saber mais sobre nossos produtos e serviços? Gostaria de fazer o orçamento de algum projeto? Acredita que uma parceria com a EcompJr seria uma boa ideia? Para isso, e qualquer outra dúvida entre em contato!</p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="imgComplement" data-aos="fade-up" data-aos-duration="1500" src="../assets/images/contato.jpg" alt="Foto de pessoas trabalhando em grupo">
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row contact">
+                        <div class="col-lg-5 col-sm-12">
+                            <p>
+                                <h3><i class="fa fa-map-marker"></i> Endereço</h3>
+                                UEFS - Avenida Transnordestina, s/nº - Módulo 5, MP 51A Novo Horizonte, Feira de Santana - BA, 44036-900
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-phone"></i> WHATSAPP</h3>
+                                (75) 98897-6806
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-envelope"></i> EMAIL</h3>
+                                ecompjr@uefs.br
+                            </p>
+                            <p>
+                                <h3><i class="fa fa-clock-o"></i> HORÁRIOS</h3>
+                                Segunda à Sexta - das 7:30 às 17:30
+                            </p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3899.701436897378!2d-38.975318370114124!3d-12.200707028713513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7143889364b821b%3A0xae5e88b833ba28f3!2sEcompJr!5e0!3m2!1spt-BR!2sbr!4v1568054667817!5m2!1spt-BR!2sbr"
+                                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <hr class="featurette-divider col-sm-12">
+                        <div class="col-lg-7 col-sm-12">
+                            <form>
+                                <h3><i class="fas fa-paper-plane"></i> Contato</h3>
+                                <div class="form-group">
+                                    <label for="name">Seu nome</label>
+                                    <textarea class="form-control" id="name" rows="1"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Endereço de email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Assunto</label>
+                                    <textarea class="form-control" id="subject" rows="1"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Sua mensagem</label>
+                                    <textarea class="form-control" id="description" rows="5"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="float-right btn btn-lg btn-primary button hvr-float">Enviar mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-
         <!-- /END THE FEATURETTES -->
 
         </div>
@@ -266,10 +463,15 @@
 
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+        <div class="footer">
+            <hr class="featurette-divider">
+            <footer>
+                <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                <img src="../assets/images/logoNome.png" height="80px" alt="Logo da EcompJr" id="logo">
+                <p><a href="#myCarousel"><i class="fa fa-chevron-up"></i></a></p>
+            </footer>
+        </div>
+
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -279,6 +481,7 @@
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/navbar.js"></script>
     <script src="../assets/js/slide.js"></script>
+    <script src="../assets/js/portfolio.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/6f8b874c8a.js" crossorigin="anonymous"></script>
     <script>

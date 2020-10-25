@@ -45,6 +45,22 @@ html {
     padding-top: 1rem;
 }
 
+footer {
+    margin-top: -3rem;
+    position: relative;
+    padding-bottom: 2rem;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background: #f7f7f7;
+    margin-bottom: -3rem;
+}
+
 @media (max-width: 768px) {
     /* Bump up size of carousel content */
     #about img {
@@ -52,6 +68,16 @@ html {
     }
     #organizationBusiness .item {
         background: #f7f7f7;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Bump up size of carousel content */
+    .contact .featurette-divider {
+        display: none;
     }
 }
 
@@ -82,4 +108,59 @@ html {
     to {
         -webkit-transform: scale(1)
     }
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
